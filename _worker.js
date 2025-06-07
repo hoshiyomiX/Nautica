@@ -3,8 +3,8 @@ import { connect } from "cloudflare:sockets";
 // import { Buffer } from "node:buffer";
 
 // Variables
-const rootDomain = "reef.katahiranaruse-daydream.workers.dev"; // Ganti dengan domain utama kalian
-const serviceName = "reef"; // Ganti dengan nama workers kalian
+const rootDomain = "coralreef.katahiranaruse-daydream.workers.dev"; // Ganti dengan domain utama kalian
+const serviceName = "CoralReef"; // Ganti dengan nama workers kalian
 const apiKey = "40740e6e1ba829df9925bba53546910de6077"; // Ganti dengan Global API key kalian (https://dash.cloudflare.com/profile/api-tokens)
 const apiEmail = "katahiranaruse.daydream@gmail.com"; // Ganti dengan email yang kalian gunakan
 const accountID = "b7a623571b1f17371cb3f59bdd8dafe4"; // Ganti dengan Account ID kalian (https://dash.cloudflare.com -> Klik domain yang kalian gunakan)
@@ -118,7 +118,7 @@ function getAllConfig(request, hostName, proxyList, page = 0) {
 
     // Build HTML
     const document = new Document(request);
-    document.setTitle("Welcome to <span class='text-blue-500 font-semibold'>Nautica</span>");
+    document.setTitle("Welcome to <span class='text-blue-500 font-semibold'>Hoshiyomi's Domain</span>");
     document.addInfo(`Total: ${proxyList.length}`);
     document.addInfo(`Page: ${page}/${Math.floor(proxyList.length / PROXY_PER_PAGE)}`);
 
